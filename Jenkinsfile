@@ -7,6 +7,11 @@ pipeline {
                 echo 'Building..'
             }
         }
+	stage('SAST'){
+	steps{
+	echo 'Pruebas de analisis estatico'	
+}
+}
         stage('Test') {
             steps {
                 echo 'Testing..'
